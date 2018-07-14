@@ -1,17 +1,17 @@
 package helper
 
 import (
-	"os"
-	"log"
-	"time"
-	"strconv"
-	"errors"
-	"encoding/json"
-	"math/rand"
 	"crypto/x509"
-	"io/ioutil"
-	"path/filepath"
+	"encoding/json"
+	"errors"
 	"github.com/getsentry/raven-go"
+	"io/ioutil"
+	"log"
+	"math/rand"
+	"os"
+	"path/filepath"
+	"strconv"
+	"time"
 )
 
 func FloatToString(float float64) string {
@@ -40,7 +40,7 @@ func TimestampStringToDate(timestamp string) time.Time {
 	return time.Unix(0, timestampInt*int64(time.Millisecond)).UTC()
 }
 
-func Debug(data ... interface{}) {
+func Debug(data ...interface{}) {
 	for _, v := range data {
 		log.Printf("[%v] %+v\n", rand.Intn(1000), v)
 	}
