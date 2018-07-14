@@ -5,12 +5,12 @@ import (
 	"log"
 	"time"
 	"strconv"
+	"errors"
 	"encoding/json"
 	"math/rand"
 	"crypto/x509"
 	"io/ioutil"
 	"path/filepath"
-	"errors"
 	"github.com/getsentry/raven-go"
 )
 
