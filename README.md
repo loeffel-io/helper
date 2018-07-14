@@ -1,5 +1,7 @@
 # helper
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/loeffel-io/helper)](https://goreportcard.com/report/github.com/loeffel-io/helper)
+
 Simple helper package 
 
 ### Sentry support
