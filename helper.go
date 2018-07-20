@@ -86,6 +86,17 @@ func IntToString(value int) string {
 	return strconv.Itoa(value)
 }
 
+func StringToInt64(value string) int64 {
+	res, err := strconv.ParseInt(value, 10, 64)
+
+	if err != nil {
+		raven.CaptureError(err, nil)
+		log.Fatal(err.Error())
+	}
+
+	return res
+}
+
 func CertPool(certs []string) *x509.CertPool {
 	roots := x509.NewCertPool()
 
