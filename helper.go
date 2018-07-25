@@ -73,7 +73,7 @@ func Sleep(seconds time.Duration) {
 }
 
 func CurrentMinute() int64 {
-	return time.Now().Unix() / 60
+	return time.Now().UTC().Unix() / 60
 }
 
 func ThrowError(message string) {
